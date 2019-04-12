@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "color":"white",
+        "note":"C4"
+    },
+    {
+        "id": 2,
+        "color":"black",
+        "note":"C#4"
+    },
+    {
+        "id": 3,
+        "color":"white",
+        "note":"D4"
+    },
+    {
+        "id": 4,
+        "color":"black",
+        "note":"Eb4"
+    },
+    {
+        "id": 5,
+        "color":"white",
+        "note":"E4"
+    },
+    {
+        "id": 6,
+        "color":"white",
+        "note":"F4"
+    },
+    {
+        "id": 7,
+        "color":"black",
+        "note":"F#4"
+    },
+    {
+        "id": 8,
+        "color":"white",
+        "note":"G4"
+    },
+    {
+        "id": 9,
+        "color":"black",
+        "note":"Ab4"
+    },
+    {
+        "id": 10,
+        "color":"white",
+        "note":"A4"
+    },
+    {
+        "id": 11,
+        "color":"black",
+        "note":"Bb4"
+    },
+    {
+        "id": 12,
+        "color":"white",
+        "note":"B4"
+    },
+    {
+        "id": 13,
+        "color":"white",
+        "note":"C5"
+    },
+    {
+        "id": 14,
+        "color":"black",
+        "note":"Db5"
+    },
+    {
+        "id": 15,
+        "color":"white",
+        "note":"D5"
+    },
+    {
+        "id": 16,
+        "color":"black",
+        "note":"Eb5"
+    },
+    {
+        "id": 17,
+        "color":"white",
+        "note":"E5"
+    },
+    {
+        "id": 18,
+        "color":"white",
+        "note":"F5"
+    }
+
+]

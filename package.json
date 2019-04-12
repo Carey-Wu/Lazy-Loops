@@ -4,9 +4,12 @@
   "private": true,
   "homepage": "http://carey-wu.github.io/lazy-loops",
   "dependencies": {
+    "jquery-react": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-piano": "^3.1.2",
+    "react-scripts": "2.1.8",
+    "tone": "^13.4.9"
   },
   "scripts": {
     "start": "react-scripts start",

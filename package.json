@@ -13,6 +13,7 @@
     "nodemon": "^1.18.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-piano": "^3.1.2",
     "react-scripts": "2.1.8",
     "tone": "^13.4.9"
   },

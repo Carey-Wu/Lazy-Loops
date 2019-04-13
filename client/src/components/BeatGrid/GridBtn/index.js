@@ -1,23 +1,38 @@
-import React from "react"
+import React, {Component} from "react"
 import "./GridBtn.css"
 
-
-
+class GridBtn extends Component{
+state={
+  bgColor: "black",
+  active: false
+};
   
-function changeColor () {
+changeColor=() => {
+    if(this.state.active===false){
+      this.setState({
+        bgColor: "yellow",
+        active: true
+      });
+      console.log("active: " + this.state.active)
+    }else{
     this.setState({
-      bgColor: 'blue'
-    })
+      bgColor: "black",
+      active: false
+    });
+    console.log("active: " +this.state.active)
   }
+}
 
-function GridBtn() {
+ render(){ 
     return (
         <button
-            style = {{background:"black"}}
-            //onClick={this.changeColor}
+            style = {{background:this.state.bgColor}}
+            onClick={this.changeColor}
             >
         </button>
     )
 }
+}
+
 
 export default GridBtn

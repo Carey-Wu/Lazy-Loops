@@ -1,4 +1,6 @@
 // Dependencies
+var passport = require('passport');
+require('../config/passport')(passport);
 const router = require("express").Router();
 const beatsController = require("../../controllers/beatsController");
 

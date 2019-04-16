@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import FinalGrid from "./components/BeatGrid/FinalGrid"
 import Keyboard from "./components/Keyboard"
@@ -12,14 +13,26 @@ const PluckSynth = new Tone.PluckSynth().toMaster()
 const MembraneSynth = new Tone.MembraneSynth().toMaster()
 const synths = [defaultSynth, AMSynth, DuoSynth, FMSynth, MonoSynth, PluckSynth, MembraneSynth]
 
+import Dashboard from './Pages/Dashboard';
+import LandingPage from './Pages/LandingPage';
 
-function App () {
+function App() {
+  return (
+    <Router>
+      <div>
+        <Switch>
+          <Route
+            exact path="/dashboard"
+            component={Dashboard}
+            />
+            <Route
+            exact path="/"
+            component={LandingPage}
+            />
+        </Switch>
+      </div>
+    </Router>
 
-  return(
-    <div>
-    <FinalGrid />
-    <Keyboard synths={synths}/>
-    </div>
   )
 }
 

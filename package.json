@@ -6,15 +6,11 @@
   "proxy": "http://localhost:3001",
   "main": "server.js",
   "dependencies": {
-<<<<<<< HEAD
-    "jquery-react": "^1.0.0",
-=======
     "axios": "^0.18.0",
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "mongoose": "^5.5.0",
     "nodemon": "^1.18.11",
->>>>>>> b501f94a8c2f118f02928b0ee1739b3472924d29
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-piano": "^3.1.2",

@@ -1,16 +1,22 @@
 import React from "react"
 import "./style.css"
-import keys from "./keys.json"
 import { Piano, KeyboardShortcuts, MidiNumbers } from 'react-piano';
 import 'react-piano/dist/styles.css';
 const Tone = require("tone")
+const defaultSynth = new Tone.Synth().toMaster()
+const AMSynth = new Tone.AMSynth().toMaster()
+const DuoSynth = new Tone.DuoSynth().toMaster()
+const FMSynth = new Tone.FMSynth().toMaster()
+const MonoSynth = new Tone.MonoSynth().toMaster()
+const PluckSynth = new Tone.PluckSynth().toMaster()
+const MembraneSynth = new Tone.MembraneSynth().toMaster()
+const synths = [defaultSynth, AMSynth, DuoSynth, FMSynth, MonoSynth, PluckSynth, MembraneSynth]
 
 
 class  Keyboard extends React.Component{
 
 render(){
 
-    const synths = this.props.synths
     let synth = synths[0]
 
     var synthChange = function(index){

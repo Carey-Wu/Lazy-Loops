@@ -13,12 +13,14 @@ router.post('/register', function(req, res) {
     } else {
       var newUser = new User({
         username: req.body.username,
-        password: req.body.password
+        password: req.body.password,
+        email: req.body.email
       });
+      console.log(newUser);
       // save the user
       newUser.save(function(err) {
         if (err) {
-          return res.json({success: false, msg: 'Username already exists.'});
+          console.log(err);//return res.json({success: false, msg: 'Username already exists.'});
         }
         res.json({success: true, msg: 'Successful created new user.'});
       });
@@ -48,3 +50,5 @@ router.post('/register', function(req, res) {
       }
     });
   });
+
+  module.exports = router;

@@ -1,4 +1,3 @@
-//Importing models
 const db = require("../models");
 
 // Defining methods for the itemsController
@@ -8,8 +7,8 @@ module.exports = {
 			.sort({ name: 1 })
 			.then(dbModel => res.json(dbModel))
 			.catch(err => res.json(err));
-	},
-	findById: function(req, res) {
+    },
+    findById: function(req, res) {
         db.User.findById(req.params.id)
           .then(dbModel => res.json(dbModel))
           .catch(err => res.status(422).json(err));

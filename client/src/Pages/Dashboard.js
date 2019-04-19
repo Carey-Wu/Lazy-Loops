@@ -9,7 +9,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
-                <LoopsSidebar />
+                {/* <LoopsSidebar /> */}
                 <FinalGrid />
                 <Keyboard />
             </div>

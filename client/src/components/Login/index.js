@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './style.css';
+import { withRouter } from 'react-router-dom'
 
 class Login extends Component {
 
@@ -29,7 +30,7 @@ class Login extends Component {
       .then((result) => {
         localStorage.setItem('jwtToken', result.data.token);
         this.setState({ message: '' });
-        this.props.history.push('/')
+        this.props.history.push('/dashboard')
       })
       .catch((error) => {
         if(error.response.status === 401) {
@@ -65,4 +66,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);

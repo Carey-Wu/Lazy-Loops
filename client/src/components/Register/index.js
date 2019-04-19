@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../Login/style.css';
 import { withRouter } from 'react-router-dom'
 
-class Create extends Component {
+class Create extends React.Component {
 
   constructor() {
     super();
@@ -28,9 +28,12 @@ class Create extends Component {
     
       .then((result) => {
         console.log(result);
-        //this.props.history.push('/api/auth/login')
-      });
+        alert(result.data.msg);
+        this.props.history.push('/');
+      })
+      
   }
+  
 
   render() {
     const { username, password, email } = this.state;
@@ -51,4 +54,4 @@ class Create extends Component {
   }
 }
 
-export default Create;
+export default withRouter(Create);

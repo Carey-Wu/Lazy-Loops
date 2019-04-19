@@ -1,12 +1,28 @@
 import React from "react"
 import "./style.css"
-import keys from "./keys.json"
 import { Piano, KeyboardShortcuts, MidiNumbers } from 'react-piano';
 import 'react-piano/dist/styles.css';
 const Tone = require("tone")
-const synth = new Tone.Synth().toMaster()
+const defaultSynth = new Tone.Synth().toMaster()
+const AMSynth = new Tone.AMSynth().toMaster()
+const DuoSynth = new Tone.DuoSynth().toMaster()
+const FMSynth = new Tone.FMSynth().toMaster()
+const MonoSynth = new Tone.MonoSynth().toMaster()
+const PluckSynth = new Tone.PluckSynth().toMaster()
+const MembraneSynth = new Tone.MembraneSynth().toMaster()
+const synths = [defaultSynth, AMSynth, DuoSynth, FMSynth, MonoSynth, PluckSynth, MembraneSynth]
 
-function Keyboard(props){
+
+class  Keyboard extends React.Component{
+
+render(){
+
+    let synth = synths[0]
+
+    var synthChange = function(index){
+        synth = synths[index]
+    }
+
     const firstNote = MidiNumbers.fromNote('c3');
     const lastNote = MidiNumbers.fromNote('f4');
     const keyboardShortcuts = KeyboardShortcuts.create({
@@ -14,6 +30,9 @@ function Keyboard(props){
       lastNote: lastNote,
       keyboardConfig: KeyboardShortcuts.HOME_ROW,
     });
+
+   
+    
     
     return(
         <div className="container">
@@ -67,10 +86,19 @@ function Keyboard(props){
       width={1000}
       keyboardShortcuts={keyboardShortcuts}
     />
-    
+        
+        <button type="submit" className= "btn btn-warning synthButton" onClick={() => {synthChange(0)}}>Default Synth</button>
+        <button type="submit" className= "btn btn-warning synthButton" onClick={() => {synthChange(1)}}>AM Synth</button>
+        <button type="submit" className= "btn btn-warning synthButton" onClick={() => {synthChange(2)}}>Duo Synth </button>
+        <button type="submit" className= "btn btn-warning synthButton" onClick={() => {synthChange(3)}}>FM Synth </button>
+        <button type="submit" className= "btn btn-warning synthButton" onClick={() => {synthChange(4)}}>Mono Synth </button>
+        <button type="submit" className= "btn btn-warning synthButton" onClick={() => {synthChange(5)}}>Pluck Synth </button>
+        <button type="submit" className= "btn btn-warning synthButton" onClick={() => {synthChange(6)}}>Membrane Synth </button>
+
+
     </div>
     )
-}
+}}
 
 
 export default Keyboard

@@ -1,10 +1,11 @@
 import React from "react";
 import GridRow from "../GridRow/index";
+import "./style.css"
 
 
 function FinalGrid() {
     return (
-        <div className="container">
+        <div className="container beatGrid">
             <GridRow />
             <br></br>
             <GridRow />

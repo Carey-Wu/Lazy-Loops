@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import LoopsSidebar from "../components/Sidebar";
-import FinalGrid from "../components/BeatGrid/FinalGrid";
-import Keyboard from "../components/Keyboard";
 
 
 class Dashboard extends Component {
@@ -10,8 +8,6 @@ class Dashboard extends Component {
         return (
             <div>
                 <LoopsSidebar />
-                <FinalGrid />
-                <Keyboard />
             </div>
         )
     }

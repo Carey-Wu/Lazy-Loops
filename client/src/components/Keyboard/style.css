@@ -2,3 +2,13 @@
 .synthButton:active{
     color:red;
 }
+
+.synthButton {
+    width: 12.5%;
+    height: 55px;
+    margin: 2.25px
+}
+
+.container {
+    width: 100%
+}

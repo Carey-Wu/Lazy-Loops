@@ -2,7 +2,7 @@
     background: url("./img/anigif_enhanced-11392-1398165075-4.gif");
     background-size: 120%;
     image-rendering: auto;
-    height: 100%;
+    height: max-content;
     width: 100%
 }
 

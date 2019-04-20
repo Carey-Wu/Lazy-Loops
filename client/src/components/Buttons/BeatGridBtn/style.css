@@ -1,0 +1,38 @@
+.dashBtn {
+    position: static;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    margin: 14px;
+    /* background: rgb(27, 163, 27); */
+    /* border: solid 3px black; */
+    color: white;
+    font: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px
+}
+
+.dashBtn:active {
+    background: rgba(29, 158, 29, 0.548);
+    background-size: 300%;
+    color: white;
+    font: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px
+}
+
+.dashBtn:hover {
+    background: url("../../Sidebar/img/tumblr_n71ifjJAwU1tchrkco1_500.gif.10d657c86978861c02de98c2b93b5959.gif");
+    background-size: 100%;
+    color: white;
+    font: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px
+}
+
+
+.btnContainer {
+    vertical-align: middle;
+    height: 100%
+    /* padding-top: 50% */
+}

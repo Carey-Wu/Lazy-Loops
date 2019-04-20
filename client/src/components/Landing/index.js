@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import Login from '../Login';
+import Create from '../Register';
 
 function Landing(){
 
@@ -17,6 +19,8 @@ return (
     </div>
     <div className="content1">
         <div className="layer layer-bg" data-type="parallax" data-depth="0.10"></div>
+        <Login/>
+        <Create/>
         <p>Lazyboi Media Presents...</p>
         <p>LazyLoops</p>
         <p>Make Music - Not War</p>

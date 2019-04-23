@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LoopsSidebar from "../components/Sidebar";
 import FinalGrid from "../components/BeatGrid/FinalGrid";
 import Keyboard from "../components/Keyboard";
+import BeatGrid2 from "../components/BeatGrid2"
 
 
 class Dashboard extends Component {
@@ -12,6 +13,7 @@ class Dashboard extends Component {
                 {/* <LoopsSidebar /> */}
                 <FinalGrid />
                 <Keyboard />
+                {/* <BeatGrid2 /> */}
             </div>
         )
     }

@@ -1,13 +1,13 @@
 import React, {Component} from "react"
 import "./GridBtn.css"
 
+
 class GridBtn extends Component{
   constructor(props){
     super(props)
     this.state = {
       bgColor: "black",
       active: false,
-      playing:false,
       sound:props.sound
     }
     
@@ -30,6 +30,8 @@ handleBeat = () =>{
     console.log("active check:" + this.state.active)
   }
 }
+
+
   
 changeColor=() => {
     if(this.state.active===false){
@@ -60,7 +62,7 @@ changeColor=() => {
             >
         </button>
         
-        <button onClick={this.handleBeat}>Active Check</button>
+        <button onClick={this.props.handleBeat}>Active Check</button>
       </div>
     )
 }

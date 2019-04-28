@@ -2,9 +2,16 @@
     background: url("./img/anigif_enhanced-11392-1398165075-4.gif");
     background-size: 120%;
     image-rendering: auto;
-    height: 100%;
+    height: 150%;
     width: 100%
 }
+/* .backdrop:first-child() {
+    background: url("./img/anigif_enhanced-11392-1398165075-4.gif");
+    background-size: 120%;
+    image-rendering: auto;
+    height: max-content;
+    width: 100%
+} */
 
 .sideBar {
     /* background: url("./img/login\ -\ Copy1.jpg"); */
@@ -14,5 +21,13 @@
     margin: 0;
     padding: 0;
     border: solid 3px rgb(128, 128, 128);
+    width: 100%
+}
+
+content {
+    background: url("./img/anigif_enhanced-11392-1398165075-4.gif");
+    background-size: 120%;
+    image-rendering: auto;
+    height: max-content;
     width: 100%
 }

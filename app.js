@@ -6,6 +6,17 @@ var bodyParser = require('body-parser');
 var beats = require('./routes/api/beats');
 var app = express();
 
+var browserify = require('browserify'),
+    stringify = require('stringify');
+
+var bundle = browserify()
+    .transform(stringify, {
+      appliesTo: { includeExtensions: ['.hjs', '.html', '.whatever'] }
+    })
+    .add('my_app_main.js');
+
+app.use(bundle);
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));

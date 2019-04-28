@@ -25,6 +25,7 @@
     "react-scripts": "2.1.8",
     "react-sidebar": "^3.0.2",
     "react-sound": "^1.2.0",
+    "stringify": "^5.2.0",
     "tone": "^13.4.9"
   },
   "scripts": {
@@ -49,6 +50,16 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "html-loader": "^0.5.5"
+  },
+  "test": "/\".(html)$/",
+  "use": {
+    "loader": "html-loader",
+    "options": {
+      "attrs": [
+        ":data-src"
+      ]
+    }
   }
 }

@@ -156,7 +156,7 @@ body{
 	
 }
 .layer-4 {
-  background-image: url('./assets/img/rsz_1lazy.png');
+  background-image: url('../img/rsz_1lazy.png');
   background-position: center;
 }
 .layer-overlay {
@@ -754,9 +754,7 @@ nav a:hover {
 }
 
 /* Footer */
-footer {
-  background-color: black
-}
+
 footer .footer-nav {
   margin-top: -7px;
 }

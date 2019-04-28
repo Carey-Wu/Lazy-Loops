@@ -11,16 +11,16 @@ function Buttons() {
     return (
         <div className="container btnContainer">
             <div className="row">
-                <KeyboardButton addKeyboard={this.triggerAddKeyboardState} />
+                <KeyboardButton addKeyboard={this.toggleKeyboardHidden} />
             </div>
             <div className="row">
-                <BeatGridButton addBeatGrid={this.triggerAddBeatGridState} />
+                <BeatGridButton addBeatGrid={this.toggleBeatGridHidden} />
             </div>
             <div className="row">
-                <RecordButton record={this.triggerRecordingState} />
+                <RecordButton /*record={this.triggerRecordingState}*/ />
             </div>
             <div className="row">
-                <SaveRecordingButton saveRecording={this.triggerSaveRecordingState} />
+                <SaveRecordingButton /*saveRecording={this.triggerSaveRecordingState}*/ />
             </div>
         </div>
     )

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './style.css';
 import { withRouter } from 'react-router-dom'
 
+const reload = () => window.location.reload();
+
 class Login extends Component {
 
   constructor() {
@@ -30,7 +32,8 @@ class Login extends Component {
       .then((result) => {
         localStorage.setItem('jwtToken', result.data.token);
         this.setState({ message: '' });
-        this.props.history.push('/dashboard')
+        this.props.history.push('/Dashboard/dashboard.html');
+        reload()
       })
       .catch((error) => {
         if(error.response.status === 401) {

@@ -89,13 +89,13 @@ class Keyboard extends React.Component {
                     />
                 </div>
                 <div className="synthBtnContainer text-center">
-                    <button type="submit" className="btn btn-warning synthButton text-center synthStart" onClick={() => { synthChange(0) }}>Default Synth</button>
-                    <button type="submit" className="btn btn-warning synthButton text-center" onClick={() => { synthChange(1) }}>AM Synth</button>
-                    <button type="submit" className="btn btn-warning synthButton text-center" onClick={() => { synthChange(2) }}>Duo Synth </button>
-                    <button type="submit" className="btn btn-warning synthButton text-center" onClick={() => { synthChange(3) }}>FM Synth </button>
-                    <button type="submit" className="btn btn-warning synthButton text-center" onClick={() => { synthChange(4) }}>Mono Synth </button>
-                    <button type="submit" className="btn btn-warning synthButton text-center" onClick={() => { synthChange(5) }}>Pluck Synth </button>
-                    <button type="submit" className="btn btn-warning synthButton text-center" onClick={() => { synthChange(6) }}>Membrane Synth </button>
+                    <button type="submit" className="btn btn-success synthButton text-center synthStart" onClick={() => { synthChange(0) }}>Default Synth</button>
+                    <button type="submit" className="btn btn-success synthButton text-center" onClick={() => { synthChange(1) }}>AM Synth</button>
+                    <button type="submit" className="btn btn-success synthButton text-center" onClick={() => { synthChange(2) }}>Duo Synth </button>
+                    <button type="submit" className="btn btn-success synthButton text-center" onClick={() => { synthChange(3) }}>FM Synth </button>
+                    <button type="submit" className="btn btn-success synthButton text-center" onClick={() => { synthChange(4) }}>Mono Synth </button>
+                    <button type="submit" className="btn btn-success synthButton text-center" onClick={() => { synthChange(5) }}>Pluck Synth </button>
+                    <button type="submit" className="btn btn-success synthButton text-center" onClick={() => { synthChange(6) }}>Membrane Synth </button>
 
                 </div>
 

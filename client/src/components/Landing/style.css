@@ -121,7 +121,7 @@ body{
 
 /* Keyboard */
 #keyboardWrapper {
-  background: url("../Sidebar/img/anigif_enhanced-11392-1398165075-4.gif");
+  background: url("https://media0.giphy.com/media/3otO6NFBIAFg2vPZuM/source.gif");
   background-size: 120%;
   image-rendering: auto;
   margin-left: -10%;
@@ -472,7 +472,7 @@ body {
 }
 
 .menu-bar span {
-  color: #fff;
+  color: rgb(4, 182, 4);
   font-size: 24px;
 }
 

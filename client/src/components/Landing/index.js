@@ -106,9 +106,13 @@ function Landing() {
                     </div>
 
                 </div>
+                <div className="parallaxical2 text-center">
+               
+               </div>
                 <div id="keyboardWrapper">
                 <Keyboard id="keyboardWrapper text-center"/>
                 </div>
+
                 {/* <!-- Parallax - Login Start --> */}
                 <div className="parallaxical">
                 <Login id="loginArea"/>
@@ -194,7 +198,7 @@ function Landing() {
                     <p className="footer-text m-0">Copyright &copy; 2019 Lazyboi Media <i className="fa fa-headphones"
                         aria-hidden="true"></i></p>
                     <div className="footer-social d-flex align-items-center">
-                        <a href="https://github.com/Carey-Wu/Lazy-Loops"><i className="fa fa-github"></i></a>
+                        <a href="https://github.com/Carey-Wu/Lazy-Loops"><i className="fab fa-github"></i></a>
 
                     </div>
                 </div>

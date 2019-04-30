@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Keyboard from "../src/components/Keyboard"
 import * as serviceWorker from './serviceWorker';
 import { unregister } from './serviceWorker';
 unregister();

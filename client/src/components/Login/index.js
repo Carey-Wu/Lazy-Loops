@@ -59,7 +59,7 @@ class Login extends Component {
           <input type="text" className="form-control" placeholder="Username" name="username" value={username} onChange= {this.onChange} required />
           <label htmlFor="inputPassword" className="sr-only">Password</label>
           <input type="password" className="form-control" placeholder="Password" name="password" value={password} onChange={this.onChange} required/>
-          <button className="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+          <button className="btn btn-lg btn-success btn-block" type="submit">Login</button>
           <p>
             Not a member? <Link to="/register"><span className="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Register here</Link>
           </p>

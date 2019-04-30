@@ -119,7 +119,15 @@ body{
 	color: white;
 }
 
-
+/* Keyboard */
+#keyboardWrapper {
+  background: url("../Sidebar/img/anigif_enhanced-11392-1398165075-4.gif");
+  background-size: 120%;
+  image-rendering: auto;
+  margin-left: -10%;
+  width: 110%;
+  z-index: 5;
+}
 /* Intro Page - Layered Parallax */
 
 #hero {

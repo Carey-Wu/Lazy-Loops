@@ -3,6 +3,7 @@ import "./style.css";
 import Login from '../Login';
 import Create from '../Register';
 import Loops from "./assets/img/loops.png";
+import Keyboard from "../Keyboard";
 
 function Landing() {
 
@@ -105,10 +106,13 @@ function Landing() {
                     </div>
 
                 </div>
+                <div id="keyboardWrapper">
+                <Keyboard id="keyboardWrapper text-center"/>
+                </div>
                 {/* <!-- Parallax - Login Start --> */}
                 <div className="parallaxical">
-                <Login/>
-                <Create/>
+                <Login id="loginArea"/>
+                <Create id="createArea"/>
                 </div>
 
                 {/* <!-- End Login Area --> */}

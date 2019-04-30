@@ -1,14 +1,28 @@
 
 .synthButton:active{
     color:red;
+    z-index: 5;
 }
 
 .synthButton {
-    width: 12.5%;
+    width: 12%;
     height: 55px;
-    margin: 2.25px
+    margin: 2.25px;
+    z-index: 5;
+    font-size: 12px
 }
 
 .container {
-    width: 100%
+    width: 100%;
+    z-index: 5;
+
+}
+
+.keyboardContainer {
+    z-index: 5;
+}
+
+.synthBtnContainer {
+    justify-content: center;
+    position: relative;
 }

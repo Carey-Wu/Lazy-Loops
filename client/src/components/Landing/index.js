@@ -53,7 +53,7 @@ function Landing() {
 
                                     <p className="text-white">Create unique music and become a musician from the comfort of your
 								keyboard <br></br> Be Lazy, Be Proud. </p>
-                                    <a href="#" className="primary-btn d-inline-flex align-items-center"><span className="mr-10">Create
+                                    <a href="#keyboardWrapper" className="primary-btn d-inline-flex align-items-center"><span className="mr-10">Create
 									Now</span><span className="lnr lnr-arrow-right"></span></a>
 
 

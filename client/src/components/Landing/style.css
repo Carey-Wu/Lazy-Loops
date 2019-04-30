@@ -4,7 +4,6 @@ html {
 	overflow-y: scroll; /* always force a scrollbar in non-IE */
 	}
 
-
 a, a:link,
 a:active,
 a:visited {
@@ -110,8 +109,22 @@ hr {
    
   }
 
+  /* Intro Page Before Keyboard*/
+
+  .parallaxical2 {
+    background: url("https://steamuserimages-a.akamaihd.net/ugc/100603690267095854/9D7B84FE1FCE7E15EA2A1B18210B13C1C12242F1/") no-repeat center center/cover;
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+   
+  }
+
   /* End Login Page */
 
+ 
 body{
 	margin: 0;
 	padding: 0;

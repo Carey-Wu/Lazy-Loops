@@ -107,16 +107,16 @@ function Landing() {
 
                 </div>
                 <div className="parallaxical2 text-center">
-               
-               </div>
+
+                </div>
                 <div id="keyboardWrapper">
-                <Keyboard id="keyboardWrapper text-center"/>
+                    <Keyboard id="keyboardWrapper text-center" />
                 </div>
 
                 {/* <!-- Parallax - Login Start --> */}
                 <div className="parallaxical">
-                <Login id="loginArea"/>
-                <Create id="createArea"/>
+                    <Login id="loginArea" />
+                    <Create id="createArea" />
                 </div>
 
                 {/* <!-- End Login Area --> */}
@@ -137,7 +137,7 @@ function Landing() {
                                         <p>No judgements here at Lazy Loops, we ask that you be yourself, unlock your creativity
                                             and
                                             have fun!
-            
+
 								</p>
                                     </div>
                                 </div>

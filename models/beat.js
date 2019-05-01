@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 //Generating Schema
 const beatSchema = new Schema({
-	beat: { type: Array, required: true },
+	beat: { type: JSON, required: true },
 	creator: {type: String, required: true},
 	date: { type: Date, default: Date.now }
 });

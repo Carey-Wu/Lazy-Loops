@@ -46,9 +46,10 @@ body {
       .grid button.ticked:hover {
         background: rgba(144, 238, 144, 0.8); }
 
-/* .controls {
-  padding: 20px; 
-  display: flex; 
+.controls {
+  margin-left: 13%;
+} 
+  /* display: flex; 
   flex-direction: column; } 
   .controls button {
     text-transform: uppercase;

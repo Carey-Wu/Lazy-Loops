@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   var AudioContext = window.AudioContext || window.webkitAudioContext || false;
-
+  
   var BPM = 120;
   var TICKS = 16;
   var soundPrefix = 'https://blog.omgmog.net/beatmaker/sounds/';
@@ -162,6 +162,8 @@
 
     // trigger download
     download_link.click();
+    
+    axios.post("/api/beatSave/beatSave", JSON.stringify(exportData))
   };
   document.querySelector('#export').addEventListener('click', exportBeat);
 
@@ -201,4 +203,5 @@
     lastTick = currentTick;
     currentTick = (currentTick + 1) % TICKS;
   }, 1 / (4 * BPM / (60 * 1000)));
+
 }());

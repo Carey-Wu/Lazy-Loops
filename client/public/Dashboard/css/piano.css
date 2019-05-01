@@ -1,0 +1,28 @@
+body{ margin:0; background:#222; }
+
+li { margin:0; padding:0; list-style:none; position:relative; float:left; }
+
+ul .white {
+	height:200px; width: 50px; z-index:1 ;
+	border:1px solid black;
+	background: white;
+}
+
+ul .white:active {
+	height:200px; width: 50px; z-index:1 ;
+	border:1px solid black;
+	background: cyan;
+}
+
+
+.black {
+	height:120px; width:30px; margin:0 0 0 -1em; z-index:2;
+    background:black;
+    color: white
+}
+
+.black:active {
+	background:yellow;
+}
+
+.a,.g,.f,.d,.c { margin:0 0 0 -1em;  }

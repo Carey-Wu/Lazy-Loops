@@ -9,6 +9,9 @@ body {
   overflow: hidden;
   width: 800px;
   height: 40em;
+  position: relative;
+  float: left;
+  margin-left: 15%;
   /* background-color: #29392b; */
   background-color: transparent;
   display: flex;

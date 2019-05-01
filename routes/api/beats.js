@@ -1,6 +1,15 @@
 // Dependencies
+var passport = require("passport");
+require("../../config/passport")(passport);
 const router = require("express").Router();
 const beatsController = require("../../controllers/beatsController");
+
+
+
+/* GET home page. */
+router.get("/", function(req, res, next) {
+  res.send("Express REST API");
+});
 
 // Matches with "/api/items"
 router.route("/")

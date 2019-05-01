@@ -1,22 +1,19 @@
 import React, { Component } from "react";
-import LoopsSidebar from "../components/Sidebar";
-import FinalGrid from "../components/BeatGrid/FinalGrid";
-import Keyboard from "../components/Keyboard";
-import BeatGrid2 from "../components/BeatGrid2"
+// import LoopsSidebar from "../components/Sidebar";
+// const Dashboard = require("../Dashboard/")
 
+
+var __html = require('../Dashboard/dashboard.html');
+var template = { __html: __html };
 
 class Dashboard extends Component {
-
-    render() {
-        return (
-            <div>
-                {/* <LoopsSidebar /> */}
-                <FinalGrid />
-                <Keyboard />
-                {/* <BeatGrid2 /> */}
-            </div>
-        )
-    }
+    // React.module.exports = React.createClass({
+        render() {
+          return(
+            <div dangerouslySetInnerHTML={template} />
+          );
+        }
+    //   });
 }
 
 export default Dashboard;

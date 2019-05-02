@@ -715,6 +715,8 @@ section {
 
 .has-sub {
     position: relative;
+    float: left;
+    padding-right: 30px;
 }
 
 /* Header (MOBILE) */

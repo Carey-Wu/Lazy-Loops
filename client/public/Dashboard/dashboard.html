@@ -1,4 +1,3 @@
-
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
@@ -21,15 +20,17 @@
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
     <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
- 
-   
+
+
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="./css/beatgrid_normalize.css">
     <link rel="stylesheet" href="./css/beatgrid_style.css">
+    <link rel="stylesheet" href="./css/piano.css">
 
 </head>
+
 <body class="animsition">
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
@@ -56,10 +57,7 @@
                                 <i class="fas fa-music"></i>Dashboard</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="index.html">Piano</a>
-                                </li>
-                                <li>
-                                    <a href="#">Instruments</a>
+                                    <a href="#">Piano</a>
                                 </li>
                                 <li>
                                     <a href="#">Record</a>
@@ -72,28 +70,28 @@
 
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-user"></i>Account</a>
+                                <i class="fas fa-user"></i>Saved</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="#">Login</a>
+                                    <a href="#"></a>
                                 </li>
                                 <li>
-                                    <a href="#">Register</a>
+                                    <a href="#"></a>
                                 </li>
                                 <li>
-                                    <a href="#">Forget Password</a>
+                                    <a href="#"></a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-desktop"></i>Instructions</a>
+                                <i class="fas fa-desktop"></i>Lazyboi Media</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="#">How To Play</a>
+                                    <a href="https://github.com/Carey-Wu/Lazy-Loops">Lazy Loops - Github</a>
                                 </li>
                                 <li>
-                                    <a href="#">Lazyboi Media</a>
+                                    <a href="https://fast-eyrie-91834.herokuapp.com/">Lazyboi</a>
                                 </li>
                                 <li>
                                     <a href="#">Contact Us</a>
@@ -120,16 +118,16 @@
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-user"></i>Dashboard</a>
+                                <br>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="index.html">Piano</a>
+                                    <a id="pianoReveal" href='#'>Piano</a>
                                 </li>
-                                <li>
-                                    <a href="#">Instruments</a>
-                                </li>
+                                <br>
                                 <li>
                                     <a href="#">Record</a>
                                 </li>
+                                <br>
                                 <li>
                                     <a href="#">Saved</a>
                                 </li>
@@ -137,28 +135,28 @@
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-copy"></i>Pages</a>
+                                <i class="fas fa-save"></i>Saved</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="#">Login</a>
+                                    <a href="#"></a>
                                 </li>
                                 <li>
-                                    <a href="#">Register</a>
+                                    <a href="#"></a>
                                 </li>
                                 <li>
-                                    <a href="#">Forget Password</a>
+                                    <a href="#"></a>
                                 </li>
                             </ul>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-desktop"></i>Instructions</a>
+                                <i class="fas fa-headphones"></i>About Us</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="#">How To Play</a>
+                                    <a href="https://github.com/Carey-Wu/Lazy-Loops">Lazy Loops</a>
                                 </li>
                                 <li>
-                                    <a href="#">Lazyboi Media</a>
+                                    <a href="https://fast-eyrie-91834.herokuapp.com/">Lazyboi Media</a>
                                 </li>
                                 <li>
                                     <a href="#">Contact Us</a>
@@ -186,17 +184,18 @@
 
                                         <div class="mess-dropdown js-dropdown">
                                             <div class="mess__title">
-                                                    <i class="zmdi zmdi-code"></i>
+                                                <i class="zmdi zmdi-code"></i>
                                                 <a href="https://github.com/Carey-Wu/Lazy-Loops">
-                                                <p>Lazy Loops - Github</p></a>
-                                               
+                                                    <p>Lazy Loops - Github</p>
+                                                </a>
+
                                             </div>
 
                                         </div>
                                     </div>
 
                                     <div class="noti__item js-item-menu">
-                                            <i class="zmdi zmdi-sign-in"></i>
+                                        <i class="zmdi zmdi-sign-in"></i>
 
                                         <div class="notifi-dropdown js-dropdown">
                                             <div class="notifi__title">
@@ -267,66 +266,101 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1 text-center">Lazyboi Media</h2>
-                                
+                                    <h2 class="title-1 text-center">
+                                        <img src="images/rsz_1lazy.png" alt="Lazyboi"
+                                            style="width:250px;height:200px; opacity:0.8; z-index:0.5;" />
+
                                 </div>
+
                             </div>
                         </div>
-                       
+
 
 
                         <div class="row">
 
-                            
+
 
                             <div class="col-lg-12">
-                                <h2 class="title-1 m-b-25">Be Lazy & Jam Out...</h2>
+
 
                                 <div class="row">
-                                        <div class="controls">
-                                                <table class="table table-borderless table-striped table-earning">
-                                                        <thead>
-                                                            <tr>
-                                                                <button class = "au-btn au-btn-icon au-btn--blue" id="random">Random</button>
-                                                                <button class="au-btn au-btn-icon au-btn--blue" id="clear">Clear</button>
-                                                                <button class = "au-btn au-btn-icon au-btn--blue" id="export">Export (json)</button>                                                                                                                 
-                                                            </tr>
-                                                        </thead>
-    
-                                                        </tbody>
-                                                    </table>
-                                            <a id="download_link" style="display:none"></a>
-                                        </div>
+                                    <div class="controls">
+                                        <table class="table table-borderless table-striped table-earning">
+                                            <thead>
+                                                <tr>
+                                                    <button class="au-btn au-btn-icon au-btn--blue"
+                                                        id="random">Random</button>
+                                                    <button class="au-btn au-btn-icon au-btn--blue"
+                                                        id="clear">Clear</button>
+                                                    <button class="au-btn au-btn-icon au-btn--blue" id="export">Export
+                                                        (json)</button>
+                                                </tr>
+                                            </thead>
+
+                                            </tbody>
+                                        </table>
+                                        <a id="download_link" style="display:none"></a>
                                     </div>
                                 </div>
-                                
-                                <div class="table-responsive table--no-card m-b-40">
-                                    <div class="grid"></div>  
-                                </div>   
                             </div>
-                            
-                            
-                            
+
+
+                            <div class="table-responsive table--no-card m-b-40">
+                                <div class="grid text-center"></div>
+                            </div>
                         </div>
-                        <script src="./js/beatgrid_index.js"></script>
+
+
+                        <div class="row" id="piano">
+                            <div class="col-lg-3">
+
+                            </div>
+                            <div class="col-lg-6 text-center">
+                                <ul class="keys">
+                                    <li id="A" class="text-center align-text-bottom white e">A</li>
+                                    <li id="W" class="text-center align-bottom black ds">W</li>
+                                    <li id="S" class="text-center align-bottom white d">S</li>
+                                    <li id="E" class="text-center align-bottom black cs">E</li>
+                                    <li id="D" class="text-center align-bottom white c">D</li>
+                                    <li id="F" class="text-center align-bottom white b">F</li>
+                                    <li id="T" class="text-center align-bottom black as">T</li>
+                                    <li id="G" class="text-center align-bottom white a">G</li>
+                                    <li id="Y" class="text-center align-bottom black gs">Y</li>
+                                    <li id="H" class="text-center align-bottom white g">H</li>
+                                    <li id="U" class="text-center align-bottom black fs">U</li>
+                                    <li id="J" class="text-center align-bottom white f">J</li>
+                                    <li id="K" class="text-center align-bottom white e">K</li>
+                                    <li id="O" class="text-center align-bottom black ds">O</li>
+                                    <li id="L" class="text-center align-bottom white d">L</li>
+                                    <li id="P" class="text-center align-bottom black cs">P</li>
+                                    <li id="semi-colon" class="text-center align-bottom white c">;</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <script src="./js/beatgrid_index.js"></script>
 
 
 
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2019 Lazyboi Media. <a
-                                            href="https://careywu.github.com/Lazy-Loops">Lazy Loops</a>.</p>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>Copyright © 2019 Lazyboi Media. <a href="https://careywu.github.com/Lazy-Loops">Lazy
+                                        Loops</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
         </div>
+        <!-- END MAIN CONTENT-->
+        <!-- END PAGE CONTAINER-->
+    </div>
 
     </div>
 
@@ -345,14 +379,22 @@
 
 
     </script>
- 
+
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
 
 
     </script>
-
+    <script src="js/piano.js"></script>
     <!-- Main JS-->
     <script src="js/main.js"></script>
+    <script>
+    $(document). ready(function() {
+        $("#pianoReveal").click(function(){
+            $("#piano").toggle("slide");
+        })
+    })
+    </script>
+   
 
 </body>
 

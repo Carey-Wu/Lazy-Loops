@@ -138,6 +138,7 @@ body{
   background-size: 120%;
   image-rendering: auto;
   margin-left: -10%;
+  padding:25px;
   width: 110%;
   z-index: 5;
 }
@@ -650,6 +651,7 @@ nav a:hover {
   font-weight: 100;
   line-height: 1.2em;
   margin-bottom: 20px;
+  padding:25px;
 }
 
 @media (max-width: 767px) {

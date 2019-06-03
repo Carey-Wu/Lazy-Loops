@@ -7,6 +7,8 @@ import Keyboard from "../Keyboard";
 
 function Landing() {
 
+    var keyboardActive = true
+
     return (
         <div>
             {/* -- Start Header Area -- */}
@@ -53,7 +55,7 @@ function Landing() {
 
                                     <p className="text-white">Create unique music and become a musician from the comfort of your
 								keyboard <br></br> Be Lazy, Be Proud. </p>
-                                    <a href="#keyboardWrapper" className="primary-btn d-inline-flex align-items-center"><span className="mr-10">Create
+                                    <a href="#loginContainer" className="primary-btn d-inline-flex align-items-center"><span className="mr-10">Create
 									Now</span><span className="lnr lnr-arrow-right"></span></a>
 
 
@@ -85,36 +87,36 @@ function Landing() {
                         <img id="bg3-1"
                             src="https://www.freeiconspng.com/uploads/misc-cloud-smoke-element-png-by-dbszabo1-on-deviantart-19.png"
                             width="300" height="300" alt="Top right image" />
-                        <img id="bg3-2" src="https://cdn140.picsart.com/277266187012211.png?r1024x1024" width="200" height="200"
-                            alt="colorful cloud" />
+                        {/* <img id="bg3-2" src="https://cdn140.picsart.com/277266187012211.png?r1024x1024" width="200" height="200"
+                            alt="colorful cloud" /> */}
                     </div>
 
-                    {/* <!-- Parallax midground --> */}
+                    {/* <!-- Parallax midground -->
                     <div id="parallax-bg2">
                         <img id="bg2-1" src="http://www.stickpng.com/assets/images/580b585b2edbce24c47b263e.png" width="300"
                             height="300" alt="cloud" />
 
 
-                    </div>
+                    </div> */}
 
                     {/* <!-- Parallax background --> */}
-                    <div id="parallax-bg1">
+                    {/* <div id="parallax-bg1">
 
                         <img id="bg1-2" src="https://cdn130.picsart.com/276458239056211.png?r1024x1024" width="350" height="350"
                             alt="music notes" />
 
-                    </div>
+                    </div> */}
 
                 </div>
-                <div className="parallaxical2 text-center">
+                {/* <div className="parallaxical2 text-center">
                
-               </div>
+               </div> */}
                 <div id="keyboardWrapper">
-                <Keyboard id="keyboardWrapper text-center"/>
+                <Keyboard id="keyboardWrapper text-center" active={keyboardActive}/>
                 </div>
 
                 {/* <!-- Parallax - Login Start --> */}
-                <div className="parallaxical">
+                <div className="parallaxical" id="loginContainer">
                 <Login id="loginArea"/>
                 <Create id="createArea"/>
                 </div>

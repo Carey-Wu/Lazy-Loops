@@ -1102,3 +1102,10 @@ section {
 .show-sidebar {
     right: 0;
 }
+
+#signout{
+    color:slategray;
+    margin-left: 10px;
+}
+
+

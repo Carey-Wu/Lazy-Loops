@@ -118,11 +118,9 @@ $(document).ready(function(){
         }
       }
     };
-
     document.querySelector('#random').addEventListener('click', setRandomBeat);
   
     var exportBeat = function () {
-      console.log("exportBeat button click")
       // create an object so we can jsonify it later
       var exportData = {}
       // for each row (sound)
@@ -170,7 +168,7 @@ $(document).ready(function(){
       axios.post("/api/beatSave/beatSave", JSON.stringify(exportData)).then(
         function(res){
           console.log(res)
-        )
+        }
     };
   
     $("#export").on("click", exportBeat)
